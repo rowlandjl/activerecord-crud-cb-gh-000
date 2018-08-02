@@ -52,10 +52,10 @@ end
 
 def can_find_by_multiple_attributes
   # Search Values:
-  # title == "Title"
-  # release_date == 2000
-  # director == "Me"
-  __
+  title == "Title"
+  release_date == 2000
+  director == "Me"
+  Movie.where(title: title, release_date: release_date, director: director)[0]
 end
 
 def can_find_using_where_clause_and_be_sorted
